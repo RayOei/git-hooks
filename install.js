@@ -119,7 +119,7 @@ function installHook(name) {
 		return;
 	}
 
-	fs.symlinkSync('./_do_hook', hookPath);
+	fs.symlinkSync('./_do_hook', hookPath, 'junction');
 }
 
 [
